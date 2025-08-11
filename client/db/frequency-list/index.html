@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>QB Reader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Frequency lists generated on qbreader.">
+
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link type="image/x-icon" href="/favicon.ico" rel="icon">
+
+    <link href="/bootstrap/light.css" rel="stylesheet">
+    <link href="/bootstrap/dark.css" rel="stylesheet" id="custom-css">
+    <script type="module" src="/scripts/apply-theme.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-custom" id="navbar" style="z-index: 10">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-1 py-0" id="logo" href="/">
+                <span class="logo-prefix">QB</span><span class="logo-suffix">Reader</span>
+            </a>
+            <button class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link" href="/singleplayer/">Singleplayer</a>
+                    <a class="nav-link" href="/multiplayer/">Multiplayer</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Database
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="/db/">Search</a>
+                            <a class="dropdown-item" href="/db/backups">Backups</a>
+                            <a class="dropdown-item" href="/db/explorer/">DB Explorer</a>
+                            <a class="dropdown-item" href="/db/frequency-list/">Frequency List</a>
+                        </ul>
+                    </li>
+                    <a class="nav-link" href="/geoword/">Geoword</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tools
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="/tools/api-docs/">API Docs</a>
+                            <a class="dropdown-item icon-link" href="https://modaq.github.io/">
+                                MODAQ <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a class="dropdown-item" href="/tools/packet-parser/">Packet Parser</a>
+                        </ul>
+                    </li>
+                    <a class="nav-link" href="/about/">About</a>
+                    <a class="nav-link" href="/settings/">Settings</a>
+                </div>
+                <div class="d-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <a class="nav-link" href="/user/login" id="login-link">Log in</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-xl mt-3 mb-5 pb-5">
+        <p class="lead" id="numbering-info">
+            Choose a link below to view frequency lists for that subcategory.
+            Click the headers for category-wide frequency lists.
+        </p>
+        <h4><a href="subcategory?literature&category=true">Literature</a></h4>
+        <ul class="text-center list-group list-group-horizontal-md mb-2">
+            <li class="list-group-item"><a href="subcategory?american-literature">American Literature</a></li>
+            <li class="list-group-item"><a href="subcategory?british-literature">British Literature</a></li>
+            <li class="list-group-item"><a href="subcategory?classical-literature">Classical Literature</a></li>
+            <li class="list-group-item"><a href="subcategory?european-literature">European Literature</a></li>
+            <li class="list-group-item"><a href="subcategory?world-literature">World Literature</a></li>
+            <li class="list-group-item"><a href="subcategory?other-literature">Other Literature</a></li>
+        </ul>
+        <ul class="text-center list-group list-group-horizontal-md">
+            <li class="list-group-item"><a href="subcategory?drama&alternate=true">Drama</a></li>
+            <li class="list-group-item"><a href="subcategory?long-fiction&alternate=true">Long Fiction</a></li>
+            <li class="list-group-item"><a href="subcategory?poetry&alternate=true">Poetry</a></li>
+            <li class="list-group-item"><a href="subcategory?short-fiction&alternate=true">Short Fiction</a></li>
+            <li class="list-group-item"><a href="subcategory?misc-literature&alternate=true">Misc Literature</a></li>
+        </ul>
+        <hr>
+        <h4><a href="subcategory?history&category=true">History</a></h4>
+        <ul class="text-center list-group list-group-horizontal-md">
+            <li class="list-group-item"><a href="subcategory?american-history">American History</a></li>
+            <li class="list-group-item"><a href="subcategory?ancient-history">Ancient History</a></li>
+            <li class="list-group-item"><a href="subcategory?european-history">European History</a></li>
+            <li class="list-group-item"><a href="subcategory?world-history">World History</a></li>
+            <li class="list-group-item"><a href="subcategory?other-history">Other History</a></li>
+        </ul>
+        <hr>
+        <h4><a href="subcategory?science&category=true">Science</a></h4>
+        <ul class="text-center list-group list-group-horizontal-md mb-2">
+            <li class="list-group-item"><a href="subcategory?biology">Biology</a></li>
+            <li class="list-group-item"><a href="subcategory?chemistry">Chemistry</a></li>
+            <li class="list-group-item"><a href="subcategory?physics">Physics</a></li>
+            <li class="list-group-item"><a href="subcategory?other-science">Other Science</a></li>
+        </ul>
+        <ul class="text-center list-group list-group-horizontal-md">
+            <li class="list-group-item"><a href="subcategory?math&alternate=true">Math</a></li>
+            <li class="list-group-item"><a href="subcategory?astronomy&alternate=true">Astronomy</a></li>
+            <li class="list-group-item"><a href="subcategory?computer-science&alternate=true">Computer Science</a></li>
+            <li class="list-group-item"><a href="subcategory?earth-science&alternate=true">Earth Science</a></li>
+            <li class="list-group-item"><a href="subcategory?engineering&alternate=true">Engineering</a></li>
+            <li class="list-group-item"><a href="subcategory?misc-science&alternate=true">Misc Science</a></li>
+        </ul>
+        <hr>
+        <h4><a href="subcategory?fine-arts&category=true">Fine Arts</a></h4>
+        <ul class="text-center list-group list-group-horizontal-md mb-2">
+            <li class="list-group-item"><a href="subcategory?visual-fine-arts">Visual Fine Arts</a></li>
+            <li class="list-group-item"><a href="subcategory?auditory-fine-arts">Auditory Fine Arts</a></li>
+            <li class="list-group-item"><a href="subcategory?other-fine-arts">Other Fine Arts</a></li>
+        </ul>
+        <ul class="text-center list-group list-group-horizontal-md">
+            <li class="list-group-item"><a href="subcategory?architecture&alternate=true">Architecture</a></li>
+            <li class="list-group-item"><a href="subcategory?dance&alternate=true">Dance</a></li>
+            <li class="list-group-item"><a href="subcategory?film&alternate=true">Film</a></li>
+            <li class="list-group-item"><a href="subcategory?jazz&alternate=true">Jazz</a></li>
+            <li class="list-group-item"><a href="subcategory?musicals&alternate=true">Musicals</a></li>
+            <li class="list-group-item"><a href="subcategory?opera&alternate=true">Opera</a></li>
+            <li class="list-group-item"><a href="subcategory?photography&alternate=true">Photography</a></li>
+            <li class="list-group-item"><a href="subcategory?misc-arts&alternate=true">Misc Arts</a></li>
+        </ul>
+        <hr>
+        <h4>RMPSS</h4>
+        <ul class="text-center list-group list-group-horizontal-md mb-2">
+            <li class="list-group-item"><a href="subcategory?religion">Religion</a></li>
+            <li class="list-group-item"><a href="subcategory?mythology">Mythology</a></li>
+            <li class="list-group-item"><a href="subcategory?philosophy">Philosophy</a></li>
+            <li class="list-group-item"><a href="subcategory?social-science">Social Science</a></li>
+        </ul>
+        <ul class="text-center list-group list-group-horizontal-md">
+            <li class="list-group-item"><a href="subcategory?anthropology&alternate=true">Anthropology</a></li>
+            <li class="list-group-item"><a href="subcategory?economics&alternate=true">Economics</a></li>
+            <li class="list-group-item"><a href="subcategory?linguistics&alternate=true">Linguistics</a></li>
+            <li class="list-group-item"><a href="subcategory?psychology&alternate=true">Psychology</a></li>
+            <li class="list-group-item"><a href="subcategory?sociology&alternate=true">Sociology</a></li>
+            <li class="list-group-item"><a href="subcategory?other-social-science&alternate=true">Other Social Science</a></li>
+        </ul>
+        <hr>
+        <h4>Other</h4>
+        <ul class="text-center list-group list-group-horizontal-md mb-2">
+            <li class="list-group-item"><a href="subcategory?movies">Movies</a></li>
+            <li class="list-group-item"><a href="subcategory?music">Music</a></li>
+            <li class="list-group-item"><a href="subcategory?sports">Sports</a></li>
+            <li class="list-group-item"><a href="subcategory?television">Television</a></li>
+            <li class="list-group-item"><a href="subcategory?video-games">Video Games</a></li>
+            <li class="list-group-item"><a href="subcategory?other-pop-culture">Other Pop Culture</a></li>
+        </ul>
+        <ul class="text-center list-group list-group-horizontal-md">
+            <li class="list-group-item"><a href="subcategory?geography">Geography</a></li>
+            <li class="list-group-item"><a href="subcategory?current-events">Current Events</a></li>
+            <li class="list-group-item"><a href="subcategory?other-academic">Other Academic</a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="module" src="/script.js"></script>
+</body>
+
+</html>
