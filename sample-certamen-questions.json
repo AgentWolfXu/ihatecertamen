@@ -1,0 +1,128 @@
+{
+  "questions": [
+    {
+      "question": "This Roman emperor built the famous wall in Britain that bears his name.",
+      "answer": "Hadrian",
+      "category": "History",
+      "subcategory": "Roman History",
+      "difficulty": 7,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This Greek philosopher was the teacher of Alexander the Great and wrote extensively on ethics and politics.",
+      "answer": "Aristotle",
+      "category": "Literature",
+      "subcategory": "Greek Literature",
+      "difficulty": 6,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This Latin word means 'friend' and is the root of the English word 'amicable'.",
+      "answer": "amicus",
+      "category": "Language",
+      "subcategory": "Latin",
+      "difficulty": 5,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This Roman goddess was the patron of wisdom, warfare, and crafts, equivalent to the Greek Athena.",
+      "answer": "Minerva",
+      "category": "Mythology",
+      "subcategory": "Roman Mythology",
+      "difficulty": 6,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This ancient city was the capital of the Roman Empire and is known as the 'Eternal City'.",
+      "answer": "Rome",
+      "category": "Culture",
+      "subcategory": "Roman Culture",
+      "difficulty": 4,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This Greek epic poem tells the story of Odysseus' journey home after the Trojan War.",
+      "answer": "The Odyssey",
+      "category": "Literature",
+      "subcategory": "Classical Literature",
+      "difficulty": 5,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This Greek word means 'love of wisdom' and is the origin of the English word 'philosophy'.",
+      "answer": "philosophia",
+      "category": "Language",
+      "subcategory": "Greek",
+      "difficulty": 6,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This Greek hero was known for his incredible strength and completed twelve labors as punishment.",
+      "answer": "Hercules",
+      "category": "Mythology",
+      "subcategory": "Greek Mythology",
+      "difficulty": 5,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This Roman general and statesman was assassinated on the Ides of March in 44 BCE.",
+      "answer": "Julius Caesar",
+      "category": "History",
+      "subcategory": "Roman History",
+      "difficulty": 5,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    },
+    {
+      "question": "This ancient Greek city-state was known for its military culture and strict social system.",
+      "answer": "Sparta",
+      "category": "Culture",
+      "subcategory": "Greek Culture",
+      "difficulty": 6,
+      "packet": "sample_packet_1",
+      "set": "sample_set_1",
+      "setName": "Sample Certamen Questions",
+      "packetNumber": 1,
+      "setYear": 2024
+    }
+  ],
+  "options": {
+    "skipDuplicateCheck": false,
+    "allowDuplicates": false
+  }
+}
