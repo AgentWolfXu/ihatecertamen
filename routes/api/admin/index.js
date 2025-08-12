@@ -1,5 +1,5 @@
 import clearReportsRouter from './clear-reports.js';
-import geowordRouter from './geoword/index.js';
+import importQuestionsRouter from './import-questions.js';
 import listReportsRouter from './list-reports.js';
 import leaderboardRouter from './leaderboard.js';
 import questionManagementRouter from './question-management/index.js';
@@ -16,7 +16,7 @@ router.use(async (req, res, next) => {
   const { username, token } = req.session;
   if (!checkToken(username, token)) {
     delete req.session;
-    res.redirect('/geoword/login');
+    res.redirect('/user/login');
     return;
   }
 
@@ -30,7 +30,7 @@ router.use(async (req, res, next) => {
 });
 
 router.use('/clear-reports', clearReportsRouter);
-router.use('/geoword', geowordRouter);
+router.use('/import-questions', importQuestionsRouter);
 router.use('/list-reports', listReportsRouter);
 router.use('/leaderboard', leaderboardRouter);
 router.use('/question-management', questionManagementRouter);
